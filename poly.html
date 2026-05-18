@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Rezolvare polinoame </title>
+        <link rel = "stylesheet" href = "poly_style.css"> </link>
+    </head>
+
+    <body>
+        <div id = "input-container"> 
+            <div style = 'display: flex; flex-direction: row; gap: 10px;
+            width: 100%; align-items: center; justify-content: center;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+            margin-bottom: 10px;
+            '>
+                <h1 style = 'color: #8B5CF6; font-family: system-ui; 
+                font-size: 28px'> Grafic </h1>
+
+                <h1 style = 'color: whitesmoke; font-family: system-ui;
+                font-size: 28px;'> Polinoame </h1>
+
+                <div id = 'logo'> 
+                    <img src = 'parabola.png' />
+                </div>
+            </div>
+
+            <div id = "range-container">
+                <h1> Grad: 7 </h1>
+                <input type = "range" max = "20" min = "1" value = "7"> </input>
+            </div>
+
+            <div id = "coef-container"> </div>
+
+            <button id = "reset-btn"> Resetare Polinom </button>
+        </div>
+
+        <canvas id = "canvas"> </canvas>
+
+        <button id = 'see-sol-btn' class = 'side-btn'> 
+            <img src = 'view.png' style = 'width: 30px; aspect-ratio: 1 / 1;'/>
+        </button>
+
+        <button id = 'zoom-in-btn' class = 'side-btn'> 
+            <img src = 'plus_icon.png' style = 'width: 15px; aspect-ratio: 1 / 1;'/>
+        </button>
+
+        <button id = 'zoom-out-btn' class = 'side-btn'> 
+            <img src = 'minus_icon.png' style = 'width: 15px; aspect-ratio: 1 / 1;'/>
+        </button>
+
+        <div id = 'color-selector'> 
+            <button id = 'btn-red' style = 'background-color: red;'> </button>
+
+            <button id = 'btn-skyblue' style = 'background-color: skyblue; opacity: 0.5;'> 
+            </button>
+
+            <button id = 'btn-orange' style = 'background-color: orange; opacity: 0.5;'> 
+            </button>
+
+            <button id = 'btn-lightgreen' style = 'background-color: lightgreen; opacity: 0.5;'> 
+            </button>
+
+            <button id = 'btn-plum' style = 'background-color: plum; opacity: 0.5;'> 
+            </button>
+        </div>
+
+        <div id = 'x-input-container'>
+            <input type = 'text' maxlength = "6" value = '0' />
+            <h2>,</h2>
+            <input type = 'text' value = '0' readonly style = 'pointer-events: none;'/>
+        </div>
+
+        <div id = "solution-holder"> 
+            <h1> Radaciniile </h1>
+        </div>
+
+    </body>
+
+    <script src = "poly_script.js"> </script>
+
+</html>

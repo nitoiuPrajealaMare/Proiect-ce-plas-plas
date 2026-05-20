@@ -270,7 +270,7 @@ function valid_brackets(s)
             stack.pop();
         }
     }
-    return true;
+    return stack.length == 0;
 }
 
 function valid_decimals(s) {

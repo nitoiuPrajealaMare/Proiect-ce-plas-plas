@@ -432,10 +432,9 @@ rangeInput.addEventListener('input', event => {
     while(coef.length > 0) coef.pop();
     clear_graph();
 
-    point.x = 0;
-    point.y = 0;
-    xInput.value = '0'; yInput.value = '0';
-    //draw_point();
+    point.x = point.y = 0;
+    xInput.value = yInput.value = '0';
+    draw_point();
 
     const num_coefs = get_num_coefs();
 
